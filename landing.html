@@ -2,372 +2,1032 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Sales Funnel Pro – Complete 6‑Page Funnel System | FunnelPro</title>
+  <title>Sales Funnel Pro – Turn One Funnel Into 7‑Figure Revenue</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta
     name="description"
-    content="Get Sales Funnel Pro, a complete 6-page funnel system with landing, upsell, downsell, checkout, and thank-you pages. One-time payment, no monthly fees, conversion-optimized."
+    content="Sales Funnel Pro is a done-for-you funnel template designed to help entrepreneurs scale to 6 and 7 figures. Get the roadmap, pages, and structure you need to sell with confidence."
   />
-  <meta name="robots" content="index,follow" />
+  <style>
+    :root {
+      --bg: #ffffff;
+      --bg-alt: #f5f5f9;
+      --primary: #4f46e5;
+      --primary-dark: #3730a3;
+      --accent: #f97316;
+      --text-main: #111827;
+      --text-muted: #6b7280;
+      --border-subtle: #e5e7eb;
+      --radius-lg: 18px;
+      --radius-md: 12px;
+      --radius-pill: 999px;
+      --shadow-soft: 0 18px 45px rgba(15, 23, 42, 0.12);
+      --shadow-card: 0 10px 30px rgba(15, 23, 42, 0.08);
+      --max-width: 1120px;
+    }
 
-  <link rel="canonical" href="https://yourdomain.com/landing.html" />
-  <link rel="stylesheet" href="css/styles.css" />
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+        "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text-main);
+      line-height: 1.6;
+    }
+
+    body {
+      padding: 16px;
+    }
+
+    main {
+      max-width: var(--max-width);
+      margin: 0 auto 40px;
+    }
+
+    section {
+      padding: 32px 20px;
+      border-radius: var(--radius-lg);
+      background: var(--bg);
+      margin-bottom: 24px;
+      box-shadow: 0 1px 0 rgba(15, 23, 42, 0.04);
+    }
+
+    .section--alt {
+      background: var(--bg-alt);
+    }
+
+    .section__header {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    .section__eyebrow {
+      font-size: 12px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    h1, h2, h3 {
+      margin: 0 0 8px;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+    }
+
+    h1 {
+      font-size: clamp(2.1rem, 3vw, 2.7rem);
+    }
+
+    h2 {
+      font-size: clamp(1.5rem, 2.3vw, 1.9rem);
+    }
+
+    h3 {
+      font-size: 1.05rem;
+    }
+
+    .section__subtitle {
+      margin: 0;
+      color: var(--text-muted);
+      max-width: 680px;
+      font-size: 0.98rem;
+    }
+
+    p {
+      margin: 0 0 10px;
+      font-size: 0.97rem;
+    }
+
+    /* HERO */
+
+    .hero {
+      box-shadow: var(--shadow-soft);
+      border-radius: 24px;
+      padding: 28px 24px;
+    }
+
+    .hero__grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.5fr) minmax(0, 1.1fr);
+      gap: 28px;
+      align-items: flex-start;
+    }
+
+    .hero__badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 4px 10px;
+      border-radius: var(--radius-pill);
+      background: rgba(79, 70, 229, 0.07);
+      color: var(--primary-dark);
+      font-size: 11px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .hero__badge-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: var(--accent);
+      box-shadow: 0 0 0 4px rgba(249, 115, 22, 0.25);
+    }
+
+    .hero__subtitle {
+      margin-bottom: 18px;
+      color: var(--text-muted);
+      font-size: 0.98rem;
+    }
+
+    .hero__list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 20px;
+      display: grid;
+      gap: 6px;
+      font-size: 0.92rem;
+      color: var(--text-muted);
+    }
+
+    .hero__list li::before {
+      content: "•";
+      color: var(--accent);
+      display: inline-block;
+      margin-right: 6px;
+    }
+
+    /* Form */
+
+    .hero__form-card {
+      border-radius: var(--radius-lg);
+      background: #111827;
+      color: #f9fafb;
+      padding: 22px 20px 20px;
+      box-shadow: var(--shadow-card);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero__form-ribbon {
+      position: absolute;
+      top: 12px;
+      right: -60px;
+      transform: rotate(38deg);
+      background: #f97316;
+      color: #fff;
+      padding: 2px 60px;
+      font-size: 11px;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+    }
+
+    .hero__form-title {
+      font-size: 1.05rem;
+      margin-bottom: 6px;
+    }
+
+    .hero__form-sub {
+      margin-bottom: 12px;
+      font-size: 0.9rem;
+      color: #d1d5db;
+    }
+
+    .hero__value-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 14px;
+      font-size: 0.8rem;
+      color: #e5e7eb;
+    }
+
+    .hero__value-tag-price {
+      font-weight: 700;
+      color: #facc15;
+    }
+
+    .form-row {
+      display: grid;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+
+    label {
+      display: block;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #9ca3af;
+      margin-bottom: 4px;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+      width: 100%;
+      padding: 10px 12px;
+      border-radius: 10px;
+      border: 1px solid #374151;
+      background: #020617;
+      color: #e5e7eb;
+      font-size: 0.9rem;
+      outline: none;
+      transition: border-color 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus {
+      border-color: #6366f1;
+      box-shadow: 0 0 0 1px rgba(99, 102, 241, 0.5);
+      background: #020617;
+    }
+
+    .btn-primary {
+      width: 100%;
+      padding: 11px 14px;
+      border-radius: 999px;
+      border: none;
+      outline: none;
+      background: linear-gradient(135deg, #4f46e5, #6366f1);
+      color: #f9fafb;
+      font-weight: 600;
+      font-size: 0.95rem;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      box-shadow: 0 10px 30px rgba(79, 70, 229, 0.45);
+      transition: transform 0.13s ease, box-shadow 0.13s ease, background 0.13s ease;
+      margin-top: 4px;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 14px 35px rgba(79, 70, 229, 0.55);
+      background: linear-gradient(135deg, #4338ca, #4f46e5);
+    }
+
+    .btn-primary span.arrow {
+      font-size: 1.1rem;
+      transform: translateY(1px);
+    }
+
+    .form-note {
+      margin-top: 6px;
+      font-size: 0.78rem;
+      color: #9ca3af;
+      text-align: left;
+    }
+
+    /* Product overview */
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.6fr) minmax(0, 1.2fr);
+      gap: 24px;
+      align-items: flex-start;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 3px 10px;
+      border-radius: var(--radius-pill);
+      background: rgba(79, 70, 229, 0.07);
+      color: var(--primary-dark);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+
+    .product-highlight {
+      margin: 6px 0 16px;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .product-list {
+      margin: 0;
+      padding-left: 18px;
+      color: var(--text-muted);
+      font-size: 0.92rem;
+    }
+
+    .product-card {
+      background: #0b1120;
+      color: #e5e7eb;
+      padding: 18px 18px 16px;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-card);
+    }
+
+    .product-card__tag {
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      color: #a5b4fc;
+      margin-bottom: 4px;
+    }
+
+    .product-card__title {
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+
+    .product-card__meta {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      font-size: 0.82rem;
+      color: #9ca3af;
+      margin-bottom: 8px;
+    }
+
+    .product-card__price-row {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      margin-bottom: 6px;
+    }
+
+    .product-card__price-old {
+      font-size: 0.9rem;
+      text-decoration: line-through;
+      color: #6b7280;
+    }
+
+    .product-card__price-current {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #facc15;
+    }
+
+    .product-card__note {
+      font-size: 0.8rem;
+      color: #9ca3af;
+    }
+
+    /* Problem & solution */
+
+    .two-col {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-subtle);
+      background: #fff;
+      padding: 16px 16px 14px;
+    }
+
+    .card--soft {
+      background: #eef2ff;
+      border-color: rgba(129, 140, 248, 0.5);
+    }
+
+    .card__title {
+      font-size: 0.97rem;
+      margin-bottom: 6px;
+    }
+
+    .card__list {
+      margin: 0;
+      padding-left: 18px;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    /* Testimonials */
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .testimonial {
+      background: #ffffff;
+      border-radius: 14px;
+      border: 1px solid var(--border-subtle);
+      padding: 14px 14px 12px;
+      box-shadow: 0 6px 25px rgba(15, 23, 42, 0.04);
+      font-size: 0.9rem;
+    }
+
+    .testimonial__quote {
+      font-style: italic;
+      margin-bottom: 6px;
+      color: #111827;
+    }
+
+    .testimonial__name {
+      font-weight: 600;
+      font-size: 0.86rem;
+      margin-bottom: 2px;
+    }
+
+    .testimonial__role {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+
+    /* Use cases / seven figures */
+
+    .usecases-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .usecase {
+      border-radius: 12px;
+      border: 1px dashed rgba(148, 163, 184, 0.9);
+      background: rgba(249, 250, 251, 0.8);
+      padding: 12px 12px 10px;
+      font-size: 0.9rem;
+    }
+
+    .usecase__tag {
+      font-size: 0.76rem;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      color: var(--accent);
+      margin-bottom: 4px;
+      font-weight: 600;
+    }
+
+    /* Roadmap */
+
+    .roadmap {
+      display: grid;
+      gap: 12px;
+      margin-top: 8px;
+    }
+
+    .roadmap-step {
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr);
+      gap: 10px;
+      align-items: flex-start;
+    }
+
+    .roadmap-step__badge {
+      width: 28px;
+      height: 28px;
+      border-radius: 999px;
+      background: #111827;
+      color: #f9fafb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+      font-weight: 600;
+      box-shadow: 0 8px 20px rgba(15, 23, 42, 0.4);
+    }
+
+    .roadmap-step__body-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin-bottom: 2px;
+    }
+
+    .roadmap-step__body-text {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    /* Funnel contents */
+
+    .contents-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 10px;
+    }
+
+    .contents-item {
+      border-radius: 12px;
+      border: 1px solid var(--border-subtle);
+      background: #ffffff;
+      padding: 11px 12px 10px;
+      font-size: 0.9rem;
+    }
+
+    .contents-item__title {
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .contents-item__desc {
+      font-size: 0.86rem;
+      color: var(--text-muted);
+    }
+
+    /* Final CTA */
+
+    .cta {
+      text-align: center;
+      padding-top: 24px;
+      padding-bottom: 24px;
+      border-radius: 18px;
+      background: radial-gradient(circle at top left, #eef2ff 0, #ffffff 36%, #fefce8 100%);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .cta__title {
+      margin-bottom: 6px;
+    }
+
+    .cta__subtitle {
+      margin-bottom: 16px;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .cta__button {
+      max-width: 280px;
+      margin: 0 auto 8px;
+    }
+
+    .cta__note {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+
+    /* Responsiveness */
+
+    @media (max-width: 900px) {
+      main {
+        margin-bottom: 24px;
+      }
+
+      section {
+        padding: 22px 18px;
+        border-radius: 18px;
+      }
+
+      .hero__grid,
+      .product-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .hero__form-card {
+        order: 1;
+      }
+
+      .hero__content {
+        order: 2;
+      }
+
+      .testimonials-grid {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      }
+
+      .usecases-grid {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      }
+
+      .two-col {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .contents-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    @media (max-width: 640px) {
+      body {
+        padding: 10px;
+      }
+
+      section {
+        padding: 18px 14px;
+        border-radius: 16px;
+      }
+
+      h1 {
+        font-size: 1.75rem;
+      }
+
+      .hero {
+        padding: 18px 14px;
+      }
+
+      .testimonials-grid,
+      .usecases-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .hero__form-card {
+        padding: 18px 14px 14px;
+      }
+
+      .hero__form-ribbon {
+        display: none;
+      }
+    }
+  </style>
 </head>
-<body class="page page--landing">
-  <header class="site-header site-header--solid">
-    <div class="container site-header__inner">
-      <a href="index.html" class="site-logo" aria-label="FunnelPro home">
-        <span class="site-logo__mark">F</span>
-        <span class="site-logo__text">FunnelPro</span>
-      </a>
+<body>
+<main>
 
-      <nav class="site-nav" aria-label="Main navigation">
-        <ul class="site-nav__list">
-          <li class="site-nav__item"><a href="index.html" class="site-nav__link">Home</a></li>
-          <li class="site-nav__item"><a href="#offer" class="site-nav__link">Offer</a></li>
-          <li class="site-nav__item"><a href="#included" class="site-nav__link">What You Get</a></li>
-          <li class="site-nav__item"><a href="#faq" class="site-nav__link">FAQ</a></li>
+  <!-- HERO / OPT-IN -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero__grid">
+      <div class="hero__content">
+        <div class="hero__badge">
+          <span class="hero__badge-dot"></span>
+          7‑Figure Funnel Template · New 2025
+        </div>
+        <h1 id="hero-title">
+          Turn One Proven Funnel Into a <strong>7‑Figure Revenue Engine</strong>
+        </h1>
+        <p class="hero__subtitle">
+          Sales Funnel Pro gives you a battle‑tested funnel layout, copy blocks, and page structure so you can launch fast,
+          convert cold traffic, and scale without guessing what to do next.
+        </p>
+        <ul class="hero__list">
+          <li>Perfect for digital products, coaching, agencies, and high‑ticket offers.</li>
+          <li>Built‑in upsell and downsell paths to grow average order value on day one.</li>
+          <li>Clean HTML layout that drops into any platform or tech stack.</li>
         </ul>
-      </nav>
+      </div>
 
-      <a href="#offer" class="btn btn--primary site-header__cta">Get Instant Access</a>
-    </div>
-  </header>
-
-  <main id="main-content">
-    <!-- Hero / VSL -->
-    <section class="hero hero--landing" aria-labelledby="landing-title">
-      <div class="container hero__grid">
-        <div class="hero__content">
-          <p class="hero__eyebrow">Sales Funnel Pro by FunnelPro</p>
-          <h1 id="landing-title" class="hero__title">
-            Discover the <strong>Simple System</strong> Turning Ordinary Offers Into Predictable Revenue
-          </h1>
-          <p class="hero__subtitle">
-            Join the exclusive group of entrepreneurs who transformed cold traffic into paying customers using this
-            plug‑and‑play sales funnel template.
-          </p>
-
-          <div class="hero__media">
-            <div class="video-placeholder" aria-label="Sales funnel presentation video">
-              <p class="video-placeholder__label">Sales Funnel Presentation</p>
-              <!-- Replace with real iframe when ready -->
-              <!-- <iframe src="https://player.vimeo.com/..." title="Sales Funnel Presentation" loading="lazy"></iframe> -->
+      <aside class="hero__form-card" aria-label="Get the Sales Funnel Pro template">
+        <div class="hero__form-ribbon">Launch Offer</div>
+        <h2 class="hero__form-title">Get the 7‑Figure Funnel Blueprint</h2>
+        <p class="hero__form-sub">Enter your details to see exactly how this funnel works and how to plug it into your business.</p>
+        <div class="hero__value-tag">
+          <span>Strategic funnel map, page copy outlines, and setup checklist&nbsp;–</span>
+          <span class="hero__value-tag-price">Free with your access today</span>
+        </div>
+        <form class="form" action="#" method="post" novalidate>
+          <div class="form-row">
+            <div>
+              <label for="hero-name">Full Name</label>
+              <input
+                id="hero-name"
+                name="name"
+                type="text"
+                placeholder="Enter your full name"
+                autocomplete="name"
+                required
+              />
+            </div>
+            <div>
+              <label for="hero-email">Email Address</label>
+              <input
+                id="hero-email"
+                name="email"
+                type="email"
+                placeholder="Enter your best email"
+                autocomplete="email"
+                required
+              />
             </div>
           </div>
-
-          <div class="hero__timer">
-            <p class="hero__timer-label">Special Launch Discount Ends In:</p>
-            <div class="countdown js-countdown" data-deadline="">
-              <div class="countdown__unit">
-                <span class="countdown__value js-countdown-hours">24</span>
-                <span class="countdown__label">Hours</span>
-              </div>
-              <div class="countdown__unit">
-                <span class="countdown__value js-countdown-minutes">00</span>
-                <span class="countdown__label">Minutes</span>
-              </div>
-              <div class="countdown__unit">
-                <span class="countdown__value js-countdown-seconds">00</span>
-                <span class="countdown__label">Seconds</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <aside id="offer" class="offer-card" aria-label="Sales Funnel Pro Offer">
-          <h2 class="offer-card__title">Sales Funnel Pro</h2>
-          <p class="offer-card__tagline">
-            Complete 6‑page funnel system you can deploy in hours, not weeks.
+          <button type="submit" class="btn-primary">
+            Get Instant Funnel Access
+            <span class="arrow">→</span>
+          </button>
+          <p class="form-note">
+            No spam, ever. You will receive the funnel breakdown and roadmap directly in your inbox.
           </p>
-
-          <div class="offer-card__price">
-            <p class="offer-card__price-old">$997</p>
-            <p class="offer-card__price-current">$497</p>
-            <p class="offer-card__price-note">One‑time payment · No monthly fees</p>
-          </div>
-
-          <ul class="offer-card__list">
-            <li>Complete 6-page funnel: landing, upsell, downsell, checkout, thank you, and more.</li>
-            <li>Conversion‑optimized layouts, headlines, CTAs, and scarcity elements.</li>
-            <li>Mobile‑responsive design tested across modern devices.</li>
-            <li>Simple color and text customization to match your brand.</li>
-            <li>Implementation checklist and quick‑start guide.</li>
-            <li>30‑day money‑back guarantee.</li>
-            <li>Priority email support if you get stuck.</li>
-          </ul>
-
-          <a href="upsell.html" class="btn btn--primary btn--lg offer-card__cta">Get Instant Access</a>
-          <p class="offer-card__secure">Secure checkout · SSL encrypted</p>
-        </aside>
-      </div>
-    </section>
-
-    <!-- Problem / Agitation -->
-    <section class="section section--alt" aria-labelledby="problem-title">
-      <div class="container">
-        <header class="section__header">
-          <h2 id="problem-title" class="section__title">Are You Struggling With Any of These?</h2>
-          <p class="section__subtitle">
-            Most entrepreneurs do not have a traffic problem. They have a funnel problem.
-          </p>
-        </header>
-
-        <div class="pain-grid">
-          <ul class="pain-list">
-            <li>Low conversion rates even though you are getting consistent traffic.</li>
-            <li>Complicated funnel builders that take days to learn and set up.</li>
-            <li>Expensive software subscriptions that lock you into monthly fees.</li>
-            <li>Inconsistent sales that make your cash flow unpredictable.</li>
-            <li>Advertising spend that never seems to turn into profit.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Solution / Benefits -->
-    <section class="section" aria-labelledby="solution-title">
-      <div class="container">
-        <header class="section__header">
-          <h2 id="solution-title" class="section__title">Sales Funnel Pro Fixes the Leaks in Your Funnel</h2>
-          <p class="section__subtitle">
-            Instead of guessing what to test next, start with a framework that is already battle‑tested.
-          </p>
-        </header>
-
-        <div class="benefits-grid">
-          <article class="benefit">
-            <h3 class="benefit__title">Proven Conversion Framework</h3>
-            <p class="benefit__text">
-              FunnelPro uses a structure that typically delivers <strong>8–15%</strong> opt‑in and sales conversions in many markets.
-            </p>
-          </article>
-
-          <article class="benefit">
-            <h3 class="benefit__title">Fast Customization</h3>
-            <p class="benefit__text">
-              Edit colors, text, and images in minutes, not hours, with clean, modular HTML and CSS.
-            </p>
-          </article>
-
-          <article class="benefit">
-            <h3 class="benefit__title">Predictable Sales Engine</h3>
-            <p class="benefit__text">
-              Turn chaotic campaigns into a predictable funnel that turns visitors into leads, customers, and repeat buyers.
-            </p>
-          </article>
-
-          <article class="benefit">
-            <h3 class="benefit__title">Stronger ROI on Ads</h3>
-            <p class="benefit__text">
-              With a higher‑converting funnel, your ad budget stretches further and becomes more profitable.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- What’s included -->
-    <section id="included" class="section section--alt" aria-labelledby="included-title">
-      <div class="container">
-        <header class="section__header">
-          <h2 id="included-title" class="section__title">What Is Inside the Sales Funnel System</h2>
-          <p class="section__subtitle">
-            Everything you need to launch a complete, professional funnel from click to checkout.
-          </p>
-        </header>
-
-        <div class="included-grid">
-          <article class="included-item">
-            <h3 class="included-item__title">6 Fully Optimized Pages</h3>
-            <p class="included-item__text">
-              Landing, upsell, downsell, checkout, and thank‑you pages with copy blocks aligned to proven persuasion principles.
-            </p>
-          </article>
-
-          <article class="included-item">
-            <h3 class="included-item__title">Easy Brand Customization</h3>
-            <p class="included-item__text">
-              Simple HTML sections and reusable CSS utilities make it easy to align the funnel with your brand.
-            </p>
-          </article>
-
-          <article class="included-item">
-            <h3 class="included-item__title">Mobile Responsive Layouts</h3>
-            <p class="included-item__text">
-              Layouts adapt flawlessly on phones, tablets, and desktops so you never lose conversions on mobile.
-            </p>
-          </article>
-
-          <article class="included-item">
-            <h3 class="included-item__title">Performance‑Optimized Code</h3>
-            <p class="included-item__text">
-              Lightweight markup and minimal dependencies keep load times snappy and bounce rates low.
-            </p>
-          </article>
-
-          <article class="included-item">
-            <h3 class="included-item__title">Conversion‑Optimized Elements</h3>
-            <p class="included-item__text">
-              Built‑in social proof, urgency, risk reversal, and strong CTAs help turn interest into action.
-            </p>
-          </article>
-
-          <article class="included-item">
-            <h3 class="included-item__title">Premium Support</h3>
-            <p class="included-item__text">
-              Get help with implementation, customization, and funnel structure from a responsive support team.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Free sample lead magnet -->
-    <section class="section" aria-labelledby="lead-title">
-      <div class="container lead-grid">
-        <div class="lead-grid__content">
-          <h2 id="lead-title" class="section__title">Not Ready to Commit? Get a Free Landing Page Template</h2>
-          <p class="section__subtitle">
-            Test the quality of the design and structure before you buy the full system.
-          </p>
-          <ul class="lead-grid__bullets">
-            <li>Fully editable sample landing page.</li>
-            <li>Copy prompts to customize the offer to your niche.</li>
-            <li>Delivered instantly to your inbox.</li>
-          </ul>
-        </div>
-
-        <form class="optin-form js-optin-form" novalidate>
-          <div class="optin-form__field">
-            <label for="lead-name">Your Name</label>
-            <input
-              type="text"
-              id="lead-name"
-              name="name"
-              placeholder="Your Name"
-              required
-              autocomplete="name"
-            />
-          </div>
-          <div class="optin-form__field">
-            <label for="lead-email">Your Email</label>
-            <input
-              type="email"
-              id="lead-email"
-              name="email"
-              placeholder="Your Email"
-              required
-              autocomplete="email"
-            />
-          </div>
-          <button type="submit" class="btn btn--primary btn--full">Get Free Template</button>
-          <p class="optin-form__note">No spam. Unsubscribe anytime.</p>
         </form>
+      </aside>
+    </div>
+  </section>
+
+  <!-- PRODUCT + HIGH-LEVEL DESCRIPTION -->
+  <section aria-labelledby="product-title">
+    <header class="section__header">
+      <p class="section__eyebrow">The Product</p>
+      <h2 id="product-title">Sales Funnel Pro – The Complete Revenue Funnel in a Box</h2>
+      <p class="section__subtitle">
+        Sales Funnel Pro is a plug‑and‑play funnel template built to help ambitious founders
+        move from inconsistent sales to a predictable, scalable 7‑figure revenue system.
+      </p>
+    </header>
+
+    <div class="product-grid">
+      <div>
+        <span class="pill">What you get inside</span>
+        <p class="product-highlight">
+          You are not buying “just pages”. You are getting a complete funnel structure that shows you what to say, where to say it,
+          and how to smoothly move a stranger from click to checkout.
+        </p>
+        <ul class="product-list">
+          <li>Conversion‑optimized layout for every step: landing, upsell, downsell, checkout, and thank‑you.</li>
+          <li>Clear headline and body copy prompts so you never stare at a blank page again.</li>
+          <li>Strategic placement of urgency, scarcity, social proof, and risk reversal for maximum conversions.</li>
+        </ul>
       </div>
-    </section>
 
-    <!-- FAQ -->
-    <section id="faq" class="section section--alt" aria-labelledby="faq-title">
-      <div class="container">
-        <header class="section__header">
-          <h2 id="faq-title" class="section__title">Frequently Asked Questions</h2>
-        </header>
-
-        <div class="faq">
-          <article class="faq-item">
-            <h3 class="faq-item__question">How easy is it to customize the funnel?</h3>
-            <p class="faq-item__answer">
-              Very easy. You can change colors, text, images, and videos with simple edits. No advanced coding is required, and a quick‑start guide walks you through the process.
-            </p>
-          </article>
-
-          <article class="faq-item">
-            <h3 class="faq-item__question">Do I need to pay monthly fees?</h3>
-            <p class="faq-item__answer">
-              No. Sales Funnel Pro is a one‑time payment. You own the templates and can deploy them on as many projects as your license allows.
-            </p>
-          </article>
-
-          <article class="faq-item">
-            <h3 class="faq-item__question">What if the funnel does not work for my business?</h3>
-            <p class="faq-item__answer">
-              You are covered by a 30‑day money‑back guarantee. If you are not satisfied, contact support within 30 days for a full refund.
-            </p>
-          </article>
-
-          <article class="faq-item">
-            <h3 class="faq-item__question">Do I need technical skills to use this?</h3>
-            <p class="faq-item__answer">
-              Basic computer skills are enough. If you can edit text and images, you can customize this funnel. Developers can extend it with custom logic if needed.
-            </p>
-          </article>
-
-          <article class="faq-item">
-            <h3 class="faq-item__question">How long does it take to set up?</h3>
-            <p class="faq-item__answer">
-              Many users launch their first version in 1–2 hours. If you only change text and images, you can be live in as little as 30 minutes.
-            </p>
-          </article>
+      <div class="product-card">
+        <p class="product-card__tag">Offer Snapshot</p>
+        <p class="product-card__title">Sales Funnel Pro Template System</p>
+        <div class="product-card__meta">
+          <span>6+ pages · 1 funnel map · Swipe copy prompts</span>
+          <span>Ready in under 2 hours</span>
         </div>
-      </div>
-    </section>
-
-    <!-- Final CTA -->
-    <section class="section section--cta" aria-labelledby="final-cta-title">
-      <div class="container section--cta__inner">
-        <div class="section--cta__content">
-          <h2 id="final-cta-title" class="section__title">Do Not Miss This Limited‑Time Offer</h2>
-          <p class="section__subtitle">
-            Join thousands of entrepreneurs who upgraded their funnels and created a more predictable, scalable business.
-          </p>
+        <div class="product-card__price-row">
+          <span class="product-card__price-old">$997</span>
+          <span class="product-card__price-current">$297</span>
         </div>
-        <div class="section--cta__actions">
-          <a href="upsell.html" class="btn btn--primary btn--lg">Get Instant Access Now</a>
-          <p class="section--cta__note">Launch discount still active · 30‑day guarantee.</p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container site-footer__grid">
-      <div class="site-footer__brand">
-        <p class="site-footer__logo">FunnelPro</p>
-        <p class="site-footer__tagline">
-          Transforming businesses with high‑converting sales funnels.
+        <p class="product-card__note">
+          One‑time payment. Use it for your own business or client projects. No recurring software fees.
         </p>
       </div>
+    </div>
+  </section>
 
-      <div class="site-footer__links">
-        <h3 class="site-footer__title">Quick Links</h3>
-        <ul class="site-footer__list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#offer">Offer</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms of Service</a></li>
+  <!-- PROBLEM & SOLUTION -->
+  <section aria-labelledby="problem-title" class="section--alt">
+    <header class="section__header">
+      <p class="section__eyebrow">The Gap</p>
+      <h2 id="problem-title">The Real Reason You Are Not at 7 Figures Yet</h2>
+      <p class="section__subtitle">
+        It is almost never about traffic. It is about what happens between the click and the checkout. Most funnels leak profit at every step.
+      </p>
+    </header>
+
+    <div class="two-col">
+      <article class="card" aria-label="Common funnel problems">
+        <h3 class="card__title">The Problem</h3>
+        <ul class="card__list">
+          <li>You send paid traffic to a generic landing page and hope for the best.</li>
+          <li>Your offer feels “nice” but not urgent, so people bookmark and never return.</li>
+          <li>There is no structured way to lift average order value with upsells and downsells.</li>
+          <li>You keep rewriting copy without a clear map of what each page should accomplish.</li>
         </ul>
+      </article>
+
+      <article class="card card--soft" aria-label="How Sales Funnel Pro solves it">
+        <h3 class="card__title">The Solution</h3>
+        <ul class="card__list">
+          <li>A proven page‑by‑page structure that guides visitors from first click to final purchase.</li>
+          <li>Headlines, subheads, and sections arranged to build desire, remove doubt, and trigger action.</li>
+          <li>Built‑in upsell and downsell paths that turn a single sale into multiple revenue moments.</li>
+          <li>A clear roadmap so you can deploy, test, and scale instead of guessing what to fix.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section aria-labelledby="testimonials-title">
+    <header class="section__header">
+      <p class="section__eyebrow">Proof</p>
+      <h2 id="testimonials-title">What Marketers Are Seeing With This Funnel</h2>
+      <p class="section__subtitle">
+        Sales Funnel Pro is built from real‑world funnels that turned struggling campaigns into multi‑six and 7‑figure revenue streams.
+      </p>
+    </header>
+
+    <div class="testimonials-grid">
+      <article class="testimonial">
+        <p class="testimonial__quote">
+          “We plugged this funnel into a cold traffic campaign and went from barely breaking even to a 3.4x ROAS in 30 days.”
+        </p>
+        <p class="testimonial__name">Alex R.</p>
+        <p class="testimonial__role">Agency Owner</p>
+      </article>
+
+      <article class="testimonial">
+        <p class="testimonial__quote">
+          “I finally understood how each page fits together. Within 6 weeks, this structure took us past our first 7‑figure year.”
+        </p>
+        <p class="testimonial__name">Maria G.</p>
+        <p class="testimonial__role">Course Creator</p>
+      </article>
+
+      <article class="testimonial">
+        <p class="testimonial__quote">
+          “Instead of endless redesigns, we followed the template, launched, and watched our average order value jump by 42%.”
+        </p>
+        <p class="testimonial__name">Jordan P.</p>
+        <p class="testimonial__role">E‑commerce Founder</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- WHAT THE FUNNEL IS FOR / 7-FIGURE ANGLE -->
+  <section aria-labelledby="usecases-title" class="section--alt">
+    <header class="section__header">
+      <p class="section__eyebrow">Use Cases</p>
+      <h2 id="usecases-title">Exactly What This Funnel Is Designed to Do</h2>
+      <p class="section__subtitle">
+        The same structure that takes a simple offer and turns it into a focused, scalable, 7‑figure funnel you can grow month after month.
+      </p>
+    </header>
+
+    <div class="usecases-grid">
+      <article class="usecase">
+        <p class="usecase__tag">High‑Ticket Coaching</p>
+        <p>
+          Qualify leads on the landing page, pre‑sell with a powerful VSL, and send only serious buyers to your application or checkout.
+        </p>
+      </article>
+
+      <article class="usecase">
+        <p class="usecase__tag">Digital Courses</p>
+        <p>
+          Turn your course into a complete offer stack, with upsells for advanced training and downsells for starter kits and payment plans.
+        </p>
+      </article>
+
+      <article class="usecase">
+        <p class="usecase__tag">Done‑for‑You Services</p>
+        <p>
+          Use the funnel to demonstrate value, show client results, and move ideal prospects from curiosity to booked calls or direct purchase.
+        </p>
+      </article>
+
+      <article class="usecase">
+        <p class="usecase__tag">E‑commerce</p>
+        <p>
+          Plug in physical products, bundle complementary items on the upsell page, and recover hesitant buyers with tailored downsell offers.
+        </p>
+      </article>
+
+      <article class="usecase">
+        <p class="usecase__tag">Memberships</p>
+        <p>
+          Sell recurring access with a clear promise, then use upsells to add on accelerators, 1:1 calls, or implementation support.
+        </p>
+      </article>
+
+      <article class="usecase">
+        <p class="usecase__tag">Agencies & Freelancers</p>
+        <p>
+          Deploy this funnel for clients, charge premium setup fees, and keep a piece of the upside as revenue grows.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ROADMAP: HOW TO MAKE MONEY WITH THIS TEMPLATE -->
+  <section aria-labelledby="roadmap-title">
+    <header class="section__header">
+      <p class="section__eyebrow">Roadmap</p>
+      <h2 id="roadmap-title">How to Turn This Funnel Into 6 and 7 Figures</h2>
+      <p class="section__subtitle">
+        Here is the simple, practical roadmap to go from “template on your computer” to a predictable revenue engine working 24/7.
+      </p>
+    </header>
+
+    <div class="roadmap">
+      <div class="roadmap-step">
+        <div class="roadmap-step__badge">1</div>
+        <div>
+          <p class="roadmap-step__body-title">Pick One Clear, Scalable Offer</p>
+          <p class="roadmap-step__body-text">
+            Choose the product or service that can realistically scale to 6 and 7 figures,
+            then plug it into the template instead of trying to sell everything at once.
+          </p>
+        </div>
       </div>
 
-      <div class="site-footer__contact">
-        <h3 class="site-footer__title">Contact</h3>
-        <p>Email: <a href="mailto:support@funnelpro.com">support@funnelpro.com</a></p>
-        <p>Phone: <a href="tel:+15551234567">(555) 123‑4567</a></p>
-        <div class="site-footer__social">
-          <a href="#" aria-label="FunnelPro on Facebook">Fb</a>
-          <a href="#" aria-label="FunnelPro on X">X</a>
-          <a href="#" aria-label="FunnelPro on Instagram">Ig</a>
-          <a href="#" aria-label="FunnelPro on LinkedIn">In</a>
+      <div class="roadmap-step">
+        <div class="roadmap-step__badge">2</div>
+        <div>
+          <p class="roadmap-step__body-title">Customize the Landing Page Messaging</p>
+          <p class="roadmap-step__body-text">
+            Use the headline and subheadline prompts to call out your ideal customer, their main problem,
+            and the transformation they get by working with you or buying your product.
+          </p>
+        </div>
+      </div>
+
+      <div class="roadmap-step">
+        <div class="roadmap-step__badge">3</div>
+        <div>
+          <p class="roadmap-step__body-title">Add Your Upsell and Downsell Offers</p>
+          <p class="roadmap-step__body-text">
+            Stack complementary offers on the upsell page and a simpler, lower‑friction alternative on the downsell page
+            so each buyer is worth more without additional traffic.
+          </p>
+        </div>
+      </div>
+
+      <div class="roadmap-step">
+        <div class="roadmap-step__badge">4</div>
+        <div>
+          <p class="roadmap-step__body-title">Connect Your Payment Processor and Email</p>
+          <p class="roadmap-step__body-text">
+            Link the checkout page to Stripe, PayPal, or your platform and connect opt‑ins to your email service so every lead and buyer is captured automatically.
+          </p>
+        </div>
+      </div>
+
+      <div class="roadmap-step">
+        <div class="roadmap-step__badge">5</div>
+        <div>
+          <p class="roadmap-step__body-title">Send Consistent Traffic and Optimize</p>
+          <p class="roadmap-step__body-text">
+            Start with a single traffic source, track each funnel step, and use A/B tests on headlines, offers,
+            and prices to gradually push your revenue into 6 and then 7 figures.
+          </p>
         </div>
       </div>
     </div>
-    <div class="site-footer__bottom">
-      <div class="container">
-        <p>© 2025 FunnelPro. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
+  </section>
 
-  <script src="js/script.js" defer></script>
+  <!-- FUNNEL PAGES: WHAT THEY CONTAIN AND WHAT THEY DO -->
+  <section aria-labelledby="contents-title" class="section--alt">
+    <header class="section__header">
+      <p class="section__eyebrow">Inside the Funnel</p>
+      <h2 id="contents-title">Every Page in the Funnel Has a Job</h2>
+      <p class="section__subtitle">
+        Instead of random pages stitched together, Sales Funnel Pro gives each page a specific role so your visitors always know what to do next.
+      </p>
+    </header>
+
+    <div class="contents-grid">
+      <article class="contents-item">
+        <p class="contents-item__title">1. Landing Page (Attention & Desire)</p>
+        <p class="contents-item__desc">
+          Grabs attention with a clear promise, tells the story behind your offer,
+          and uses social proof and proof points to move visitors from curious to excited.
+        </p>
+      </article>
+
+      <article class="contents-item">
+        <p class="contents-item__title">2. Checkout Page (Decision & Trust)</p>
+        <p class="contents-item__desc">
+          Makes the purchase decision feel safe and easy with a clean layout,
+          benefit bullets, guarantee section, and minimal distractions around the payment form.
+        </p>
+      </article>
+
+      <article class="contents-item">
+        <p class="contents-item__title">3. Upsell Page (Maximizing Revenue)</p>
+        <p class="contents-item__desc">
+          Presents a natural, higher‑value next step with a one‑click add‑on option
+          so you can dramatically lift average order value without adding more traffic.
+        </p>
+      </article>
+
+      <article class="contents-item">
+        <p class="contents-item__title">4. Downsell Page (Saving the Sale)</p>
+        <p class="contents-item__desc">
+          Catches customers who say “no” to the upsell and offers a lighter, more affordable option
+          instead of losing them entirely, turning more visitors into buyers.
+        </p>
+      </article>
+
+      <article class="contents-item">
+        <p class="contents-item__title">5. Thank‑You Page (Retention & Referrals)</p>
+        <p class="contents-item__desc">
+          Confirms the purchase, sets expectations, and introduces next steps,
+          including referral prompts, onboarding, or simple follow‑up offers.
+        </p>
+      </article>
+
+      <article class="contents-item">
+        <p class="contents-item__title">6. Bonus / Content Pages (Value & Nurture)</p>
+        <p class="contents-item__desc">
+          Optional pages for delivering free trainings, checklists, or case studies
+          that nurture your audience and warm them up for future offers.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="cta" aria-labelledby="cta-title">
+    <h2 id="cta-title" class="cta__title">Ready to Install a 7‑Figure‑Ready Funnel in Your Business?</h2>
+    <p class="cta__subtitle">
+      Get the exact template, structure, and roadmap to turn one offer and one funnel into a predictable revenue machine.
+      No guesswork, no endless redesigns, just focused execution.
+    </p>
+    <div class="cta__button">
+      <button type="button" class="btn-primary">
+        Get Sales Funnel Pro Now
+        <span class="arrow">→</span>
+      </button>
+    </div>
+    <p class="cta__note">
+      Instant digital access · Works on any platform · Designed to help you scale into 6 and 7 figures.
+    </p>
+  </section>
+
+</main>
 </body>
 </html>
