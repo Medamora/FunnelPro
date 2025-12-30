@@ -1,0 +1,11 @@
+{
+  "name": "custom-sales-funnel",
+  "version": "1.0.0",
+  "description": "A high-converting sales funnel template",
+  "scripts": {
+    "start": "servor --reload"
+  },
+  "dependencies": {
+    "servor": "^4.0.2"
+  }
+}
