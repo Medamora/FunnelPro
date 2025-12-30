@@ -1,237 +1,209 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Secure Checkout - Complete Your Order</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Complete your purchase securely and get instant access to our sales funnel system." />
-    <link rel="stylesheet" href="css/styles.css" />
-    <script type="module" src="js/script.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-  </head>
-  <body class="checkout-page">
-    <header>
-      <div class="logo">
-        <h2>FunnelPro</h2>
+<body class="complateorderpage">
+<header class="oto-header">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col logo">
+        <a href="index.html">
+          <img src="assets/img/Logo.svg" alt="High-Converting Sales Funnels">
+        </a>
       </div>
-    </header>
+      <div class="col-md-12 col-lg-8 right-col">
+        <p>
+          <span>#1 Rated Sales Funnel Launch Package</span> – Used by 75,000+ Entrepreneurs Worldwide
+        </p>
+      </div>
+    </div>
+  </div>
+</header>
 
-    <main>
-      <section class="checkout-section">
-        <div class="container">
-          <h1>Complete Your <span class="highlight">Secure</span> Order <i class="fas fa-lock pulse-icon"></i></h1>
-          <p class="subtitle">You're just one step away from transforming your business</p>
-          
-          <div class="checkout-container">
-            <div class="checkout-form">
-              <h2>Billing Information</h2>
-              <form id="checkout-form">
-                <div class="form-row">
-                  <div class="form-group">
-                    <label for="first-name">First Name</label>
-                    <input type="text" id="first-name" name="first-name" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="last-name">Last Name</label>
-                    <input type="text" id="last-name" name="last-name" required>
-                  </div>
-                </div>
-                
-                <div class="form-group">
-                  <label for="email">Email Address</label>
-                  <input type="email" id="email" name="email" required>
-                </div>
-                
-                <div class="form-group">
-                  <label for="address">Street Address</label>
-                  <input type="text" id="address" name="address" required>
-                </div>
-                
-                <div class="form-row">
-                  <div class="form-group">
-                    <label for="city">City</label>
-                    <input type="text" id="city" name="city" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="state">State/Province</label>
-                    <input type="text" id="state" name="state" required>
-                  </div>
-                </div>
-                
-                <div class="form-row">
-                  <div class="form-group">
-                    <label for="zip">Zip/Postal Code</label>
-                    <input type="text" id="zip" name="zip" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="country">Country</label>
-                    <select id="country" name="country" required>
-                      <option value="">Select Country</option>
-                      <option value="US">United States</option>
-                      <option value="CA">Canada</option>
-                      <option value="UK">United Kingdom</option>
-                      <option value="AU">Australia</option>
-                      <option value="Other">Other</option>
-                    </select>
-                  </div>
-                </div>
-                
-                <h2>Payment Information</h2>
-                <div class="payment-icons">
-                  <i class="fab fa-cc-visa"></i>
-                  <i class="fab fa-cc-mastercard"></i>
-                  <i class="fab fa-cc-amex"></i>
-                  <i class="fab fa-cc-discover"></i>
-                  <i class="fab fa-cc-paypal"></i>
-                </div>
-                
-                <div class="form-group">
-                  <label for="card-number">Card Number</label>
-                  <div class="card-input-wrapper">
-                    <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456" required>
-                    <i class="fas fa-credit-card"></i>
-                  </div>
-                </div>
-                
-                <div class="form-row">
-                  <div class="form-group">
-                    <label for="expiry">Expiration Date</label>
-                    <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="cvv">Security Code (CVV)</label>
-                    <div class="cvv-input-wrapper">
-                      <input type="text" id="cvv" name="cvv" placeholder="123" required>
-                      <i class="fas fa-question-circle cvv-info"></i>
-                      <div class="cvv-tooltip">The 3 or 4 digit code on the back of your card</div>
-                    </div>
-                  </div>
-                </div>
-                
-                <div class="order-button">
-                  <button type="submit" class="btn btn-primary pulse">Complete Order Securely <i class="fas fa-lock"></i></button>
-                </div>
-                
-                <div class="secure-badges">
-                  <div class="secure-badge">
-                    <i class="fas fa-shield-alt"></i>
-                    <p>256-bit SSL Encryption</p>
-                  </div>
-                  <div class="secure-badge">
-                    <i class="fas fa-lock"></i>
-                    <p>Secure Checkout</p>
-                  </div>
-                  <div class="secure-badge">
-                    <i class="fas fa-user-shield"></i>
-                    <p>Privacy Protected</p>
-                  </div>
-                </div>
-              </form>
-            </div>
-            
-            <div class="order-summary">
-              <h2>Order Summary</h2>
-              <div class="product-details">
-                <h3 id="product-name">Sales Funnel Pro Package</h3>
-                <div class="product-price">
-                  <span class="original-price" id="original-price">$997</span>
-                  <span class="current-price" id="current-price">$497</span>
-                </div>
-              </div>
-              
-              <div class="order-details">
-                <div class="order-row">
-                  <span>Subtotal:</span>
-                  <span id="subtotal">$497</span>
-                </div>
-                <div class="order-row discount">
-                  <span>Discount:</span>
-                  <span id="discount">-$500</span>
-                </div>
-                <div class="order-row">
-                  <span>Tax:</span>
-                  <span id="tax">$0</span>
-                </div>
-                <div class="order-row total">
-                  <span>Total:</span>
-                  <span id="total">$497</span>
-                </div>
-              </div>
-              
-              <div class="order-guarantee">
-                <img src="https://img.icons8.com/color/96/000000/warranty.png" alt="30-Day Guarantee" />
-                <div>
-                  <h4>30-Day Money-Back Guarantee</h4>
-                  <p>If you're not completely satisfied with your purchase, simply contact us within 30 days for a full refund.</p>
-                </div>
-              </div>
-              
-              <div class="countdown-container">
-                <h3>Special Pricing Ends In:</h3>
-                <div id="checkout-countdown" class="countdown">
-                  <div class="countdown-item">
-                    <span id="checkout-minutes">15</span>
-                    <span class="countdown-label">Minutes</span>
-                  </div>
-                  <div class="countdown-item">
-                    <span id="checkout-seconds">00</span>
-                    <span class="countdown-label">Seconds</span>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="testimonial-mini">
-                <div class="testimonial-stars">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
-                <p>"This funnel template increased my conversion rate by 43% in just two weeks. Best investment I've made for my business."</p>
-                <div class="testimonial-author">
-                  <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John D." />
-                  <span>John D., E-commerce Entrepreneur</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-logo">
-            <h3>FunnelPro</h3>
-            <p>Transforming businesses with high-converting sales funnels</p>
-          </div>
-          <div class="footer-links">
-            <h4>Quick Links</h4>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Terms of Service</a></li>
-              <li><a href="#">Contact Us</a></li>
-            </ul>
-          </div>
-          <div class="footer-contact">
-            <h4>Contact Us</h4>
-            <p><i class="fas fa-envelope"></i> support@funnelpro.com</p>
-            <p><i class="fas fa-phone"></i> (555) 123-4567</p>
-            <div class="social-icons">
-              <a href="#"><i class="fab fa-facebook"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <p>&copy; 2025 FunnelPro. All rights reserved.</p>
+<div class="content">
+  <section class="form-area pd-80">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 toptitle text-center">
+          <h1>Complete Your Order</h1>
+          <p>Secure 256‑bit encrypted checkout. Your funnel strategy and build plan will be delivered instantly by email.</p>
         </div>
       </div>
-    </footer>
-  </body>
-</html>
+
+      <div class="formcontentSec">
+        <!-- Form Start -->
+        <form class="form row" action="https://www.paypal.com/cgi-bin/webscr" method="post" id="contact_form2" name="cardpayment">
+          <!-- PayPal / backend fields (unchanged) -->
+          <input type="hidden" name="stripeToken" id="stripeToken" />
+          <input type="hidden" name="productId" value="1" />
+          <input type="hidden" name="item_name" value="Sales Funnel Launch Package - Order Form Submission" />
+          <input type="hidden" name="amount" value="105.98" />
+          <input type="hidden" name="pt" id="pt" value="index.html">
+          <input type="hidden" name="business" value="ogwebsolutions@gmail.com">
+          <input type="hidden" name="cmd" value="_xclick">
+          <input type="hidden" name="item_number" value="1">
+          <input type="hidden" name="credits" value="105.98">
+          <input type="hidden" name="amount" id="txtDonateAmt" value="105.98">
+          <input type="hidden" name="cpp_header_image" value="">
+          <input type="hidden" name="no_shipping" value="1">
+          <input type="hidden" name="currency_code" value="USD">
+          <input type="hidden" name="handling" value="0">
+          <input type="hidden" name="cancel_return" value="order-cancelled.html">
+          <input type="hidden" name="return" value="thank-you.html">
+
+          <!-- Left column: order summary + personal info -->
+          <div class="col-lg-6 col-md-12 left-col">
+            <div class="your_productlist">
+              <h2>Your Order Summary</h2>
+              <ul>
+                <li>
+                  <div class="pull-left"><strong>Item</strong></div>
+                  <div class="pull-right"><strong>Amount</strong></div>
+                </li>
+                <li>
+                  <div class="pull-left">Sales Funnel Implementation Upgrade</div>
+                  <div class="pull-right">$99.00</div>
+                </li>
+                <li>
+                  <div class="pull-left">Sales Funnel Launch Plan (Setup)</div>
+                  <div class="pull-right">$6.98</div>
+                </li>
+                <li class="total-row">
+                  <div class="pull-left"><strong>Total Today</strong></div>
+                  <div class="pull-right"><strong>$105.98</strong></div>
+                </li>
+              </ul>
+              <div class="guarantee-box">
+                <p><strong>30‑Day “Funnel Working For You” Guarantee:</strong> If you don’t feel your funnel is worth at least 10x today’s investment within 30 days, email support and get a full refund.</p>
+              </div>
+            </div>
+
+            <h2 class="headingsec">Personal Information</h2>
+            <div class="form-group">
+              <input class="form-control" name="first_name" type="text" placeholder="First Name" required>
+            </div>
+            <div class="form-group">
+              <input class="form-control" name="last_name" type="text" placeholder="Last Name" required>
+            </div>
+            <div class="form-group">
+              <input class="form-control" name="email" type="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+              <input class="form-control" name="phone" type="tel" placeholder="Phone Number" required>
+            </div>
+          </div>
+
+          <!-- Right column: address + payment -->
+          <div class="col-lg-6 col-md-12 right-col">
+            <h2 class="headingsec">Billing Address</h2>
+            <div class="form-group">
+              <input class="form-control" name="billing_address" type="text" placeholder="Street Address" required>
+            </div>
+            <div class="form-group">
+              <input class="form-control" name="billing_address_2" type="text" placeholder="Apartment, Suite, Etc. (Optional)">
+            </div>
+            <div class="form-group">
+              <input class="form-control" name="city" type="text" placeholder="City" required>
+            </div>
+            <div class="form-group">
+              <input class="form-control" name="state" type="text" placeholder="State / Province" required>
+            </div>
+            <div class="form-group">
+              <select class="form-control" name="country" required>
+                <option value="">Select Country...</option>
+                <!-- keep your country list here -->
+              </select>
+            </div>
+            <div class="form-group">
+              <input class="form-control" name="zip" type="text" placeholder="Zip / Postal Code" required>
+            </div>
+
+            <h2 class="headingsec">Payment Details</h2>
+            <p class="small text-muted">Choose your preferred payment method and complete your order securely.</p>
+
+            <div class="payment-status" style="color: red;"></div>
+
+            <div class="form-group paypal-card-group">
+              <label>
+                <input type="radio" id="paypalpay" name="paymentmethod">
+                Pay with PayPal
+              </label>
+              <label>
+                <input type="radio" id="stripepay" name="paymentmethod">
+                Pay with credit / debit card
+              </label>
+            </div>
+
+            <div id="paymentdiv" class="payment-outer" style="display: none;">
+              <div class="form-group card-number-group">
+                <input type="text" class="form-control" name="card_number"
+                       placeholder="Card Number" autocomplete="cc-number" id="card_number"
+                       maxlength="16" data-stripe="number" />
+              </div>
+              <div class="form-row d-flex">
+                <div class="form-group card-exp-month-group">
+                  <select name="card_exp_month" id="card_exp_month" class="form-control" data-stripe="exp_month">
+                    <option value="" selected>Month</option>
+                    <option value="01">01 (JAN)</option>
+                    <option value="02">02 (FEB)</option>
+                    <option value="03">03 (MAR)</option>
+                    <option value="04">04 (APR)</option>
+                    <option value="05">05 (MAY)</option>
+                    <option value="06">06 (JUN)</option>
+                    <option value="07">07 (JUL)</option>
+                    <option value="08">08 (AUG)</option>
+                    <option value="09">09 (SEP)</option>
+                    <option value="10">10 (OCT)</option>
+                    <option value="11">11 (NOV)</option>
+                    <option value="12">12 (DEC)</option>
+                  </select>
+                </div>
+                <div class="form-group card-exp-year-group">
+                  <select name="card_exp_year" id="card_exp_year" class="form-control" data-stripe="exp_year">
+                    <option value="" selected>Year</option>
+                    <option value="24">2024</option>
+                    <option value="25">2025</option>
+                    <option value="26">2026</option>
+                    <option value="27">2027</option>
+                    <option value="28">2028</option>
+                    <option value="29">2029</option>
+                    <option value="30">2030</option>
+                    <option value="31">2031</option>
+                    <option value="32">2032</option>
+                    <option value="33">2033</option>
+                    <option value="34">2034</option>
+                    <option value="35">2035</option>
+                  </select>
+                </div>
+                <div class="form-group card-cvc-group">
+                  <input type="password" class="form-control" name="card_cvc" placeholder="CVC" autocomplete="cc-csc" id="card_cvc" />
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group btn-outer">
+              <button type="submit" class="pay-btn" id="payBtn">
+                COMPLETE YOUR ORDER<br>
+                <span>Get Instant Access To Your Funnel Plan</span>
+              </button>
+              <div id="loader" style="display: none">
+                <img src="assets/img/ajax-loader.gif" alt="Processing">
+              </div>
+            </div>
+
+            <div class="cards">
+              <img src="assets/img/cards.png" alt="Secure Payment Methods">
+              <p class="secure-text small">
+                Your payment is protected by industry‑standard 256‑bit SSL encryption.
+              </p>
+            </div>
+
+            <div class="form-status"></div>
+          </div>
+        </form>
+        <!-- Form End -->
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <!-- keep your existing footer -->
+</footer>
+</body>
